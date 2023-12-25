@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Lora:ital,wght@0,700;1,700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>dictionary-web-app</title>
+  </head>
+  <body>
+    <main class="main">
+      <nav class="nav">
+        <img src="./img/iconoir_book.svg" alt="" class="nav__icon" />
+
+        <div class="nav__section">
+          <div class="nav__dropdown">
+            <div class="dropdown__wrapper">
+              <span class="selected__font" data-ff>Sans Serif</span>
+              <div class="dropdown__container none">
+                <a href="" class="sans-serif">Sans Serif</a>
+                <a href="" class="serif">Serif</a>
+                <a href="" class="mono">Mono</a>
+              </div>
+            </div>
+            <button class="nav__btn">
+              <img
+                src="./img/Path 3 (1).svg"
+                alt=""
+                class="nav__img btn__img"
+              />
+            </button>
+          </div>
+          <div class="line"></div>
+          <div class="nav__theme">
+            <label class="switch">
+              <input type="checkbox" value="" class="toggle__input" />
+              <span class="move"></span>
+            </label>
+            <svg
+              width="22"
+              height="22"
+              viewBox="0 0 22 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1 10.449C0.998458 12.8283 1.80169 15.1383 3.27914 17.0033C4.75659 18.8683 6.82139 20.1788 9.13799 20.7218C11.4545 21.2647 13.8866 21.0082 16.039 19.994C18.1912 18.9797 19.9373 17.2673 20.9931 15.1352C11.5442 15.1352 6.85799 10.4479 6.85799 1C5.09842 1.87311 3.61767 3.22033 2.58266 4.88981C1.54765 6.5593 0.999502 8.48469 1 10.449Z"
+                stroke="#757575"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+        </div>
+      </nav>
+      <form class="form">
+        <input
+          type="text"
+          class="input__word"
+          placeholder="Search for any word…"
+          data-ff
+        />
+        <button type="submit" class="search__btn">
+          <img src="./img/Shape.svg" alt="" class="search__icon" />
+        </button>
+        <small class="small none">Whoops, can’t be empty…</small>
+      </form>
+      <section class="section none">
+        <div class="output__container">
+          <div class="output">
+            <h1 class="vocabulary"></h1>
+            <p class="transcription">//</p>
+          </div>
+          <button class="voice__btn">
+            <svg
+              width="13"
+              height="13"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0V13L13 6.5L0 0Z"
+                fill="#A445ED"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="section__line">
+          <p class="section__noun" data-ff>noun</p>
+          <div class="horizontal__line line"></div>
+        </div>
+        <div class="Meaning__container">
+          <h3 class="meaning__noun">Meaning</h3>
+          <ul class="meaning__list">
+            <li class="list__item">
+              <img src="./img/Oval.png" alt="" class="li__img" />
+              <span class="span__li meaning__first"></span>
+            </li>
+            <li class="list__item">
+              <img src="./img/Oval.png" alt="" class="li__img" />
+              <span class="span__li meaning__second"> </span>
+            </li>
+            <li class="list__item">
+              <img src="./img/Oval.png" alt="" class="li__img" />
+              <span class="span__li meaning__third"> </span>
+            </li>
+          </ul>
+          <section class="section__synonyms">
+            <p class="synonyms">Synonyms</p>
+            <a href="" class="synonyms__a" data-ff></a>
+          </section>
+          <div class="section__line">
+            <p class="section__noun verb" data-ff>verb</p>
+            <div class="horizontal__line line"></div>
+          </div>
+          <div class="verb__section">
+            <h3 class="meaning__noun verb">Meaning</h3>
+            <ul class="meaning__list verb__list">
+              <li class="list__item">
+                <img src="./img/Oval.png" alt="" class="li__img" />
+                <span class="verb__item">
+                  <div class="sentence"></div>
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div class="verb__line line"></div>
+          <div class="link__section">
+            <p class="link__p">Source</p>
+            <div class="link__content">
+              <a href="" class="link__a"></a>
+              <img src="./img/footer-Shape.svg" alt="" class="link__img" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <img src="./img/footer-icon.svg" alt="" class="footer__icon none" />
+        <h3 class="footer__h3 none">No Definitions Found</h3>
+        <p class="footer__text none">
+          Sorry pal, we couldn't find definitions for the word you were looking
+          for. You can try the search again at later time or head to the web
+          instead.
+        </p>
+      </footer>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
