@@ -110,6 +110,7 @@ search.addEventListener("click", async (e) => {
       small.classList.remove("none");
       input.style.border = "1px solid #ff5252";
       section.classList.add("none");
+      editFooter();
       return;
     } else {
       small.classList.add("none");
@@ -125,14 +126,18 @@ search.addEventListener("click", async (e) => {
   }
 });
 
+function editFooter() {
+  footerH3.classList.add("none");
+  footertext.classList.add("none");
+  footerIcon.classList.add("none");
+}
+
 async function showData() {
   input.setAttribute("disabled", true);
 
   await getData();
 
-  footerH3.classList.add("none");
-  footertext.classList.add("none");
-  footerIcon.classList.add("none");
+  editFooter();
 
   section.classList.remove("none");
   input.value = "";
